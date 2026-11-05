@@ -221,7 +221,8 @@ $("typedForm").addEventListener("submit", (e) => {
 });
 $("fileInput").addEventListener("change", (e) => {
   const f = e.target.files[0];
-  if (f) sendAudio(f, f.name);
+  if (f && f.size > 4 * 1024 * 1024) showError("That recording is too large. Please keep it under 4 MB, or type it instead.");
+  else if (f) sendAudio(f, f.name);
   e.target.value = "";
 });
 document.querySelectorAll("[data-ex]").forEach((b) => b.addEventListener("click", () => sendText(b.dataset.ex)));

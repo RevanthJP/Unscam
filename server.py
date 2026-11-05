@@ -10,8 +10,8 @@ from pydantic import BaseModel, Field
 import pipeline
 
 DAILY_CAP = 300  # protects the free model quota on a shared link
-MAX_AUDIO_BYTES = 15 * 1024 * 1024
-STATIC = Path(__file__).parent / "static"
+MAX_AUDIO_BYTES = 4 * 1024 * 1024  # Vercel rejects request bodies over 4.5 MB
+PUBLIC = Path(__file__).parent / "public"  # Vercel serves this folder directly
 _usage = {"day": "", "count": 0}
 
 app = FastAPI(title="Unscam", docs_url=None, redoc_url=None)
@@ -62,7 +62,7 @@ def check_text(body: TextIn):
 def check_audio(file: UploadFile = File(...)):
     data = file.file.read(MAX_AUDIO_BYTES + 1)
     if len(data) > MAX_AUDIO_BYTES:
-        raise HTTPException(413, "That recording is too long. Please keep it under a few minutes.")
+        raise HTTPException(413, "That recording is too large. Please keep it under 4 MB, or type it instead.")
     if not data:
         raise HTTPException(400, "We did not receive any audio. Please try again.")
     _spend()
@@ -80,7 +80,7 @@ def check_audio(file: UploadFile = File(...)):
 
 @app.get("/")
 def index():
-    return FileResponse(STATIC / "index.html")
+    return FileResponse(PUBLIC / "index.html")
 
 
-app.mount("/static", StaticFiles(directory=STATIC), name="static")
+app.mount("/static", StaticFiles(directory=PUBLIC / "static", check_dir=False), name="static")
