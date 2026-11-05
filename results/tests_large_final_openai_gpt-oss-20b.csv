@@ -1,0 +1,144 @@
+id,language,label,kind,text,form,plain_model,rules_only,checklist_rules,final,llm_features
+1065,ta,scam,short_tag,"மின்சார விநியோக நிறுவனம்: உங்கள் பில் 10,000 ரூபாய் பாக்கி. உடனே பணம் செலுத்தாவிடில் 24 மணி நேரத்தில் மின்சாரம் நிறுத்தப்படும். இப்போதே 9998887770க்கு பணம் அனுப்பவும்.",message,scam,not_sure,not_sure,likely_scam,money_request|urgency
+1136,tanglish,legit,short_tag,HDFC Bank OTP: 587932. Do not share with anyone. Valid for 5 mins.,message,legit,likely_fine,not_sure,not_sure,secrecy|authority_claim
+1272,hinglish,legit,short_tag,"Mere debit card se Rs.5000 ka transaction hua, notification aaya ki Rs.5,000 debit hua hai, koi fraud nahi lagta.",described,legit,likely_fine,likely_fine,likely_fine,
+1194,hi,legit,short_tag,"अमन (saved contact): कल शाम 6 बजे कॉल किया, कहा कि वह नया मोबाइल ले आया है, अब हम साथ में गेम खेलेंगे।",message,legit,likely_fine,likely_fine,likely_fine,
+1099,ta,scam,short_tag,"என் பெயரில் ஒரு கடைசிப் பாக்கியம் வந்தது, customs clearance செய்ய 3,000 ரூபாய் செலுத்த சொல்லி, link example-link.test.",described,scam,likely_fine,likely_scam,likely_scam,money_request|link|urgency
+1206,hi,scam,short_tag,"मेरी माँ के दोस्त ने कहा कि उनका अस्पताल में इमरजेंसी है, तुरंत 10k भेजो, उन्होंने अपना नंबर 9876543210 दिया।",described,scam,not_sure,not_sure,likely_scam,money_request|urgency
+1109,ta,legit,short_tag,"என் ஆமசான் பாக்கெட் இன்று மாலை 5 மணிக்கு வந்திருக்கும், டிராக்கிங்: https://example-link.test",described,legit,not_sure,not_sure,not_sure,link
+1041,en,scam,short_tag,"A group on Telegram kept posting ""guaranteed 30% returns"" on stock tips, they asked me to send money to a wallet, promising huge profits within a week.",described,scam,not_sure,not_sure,likely_scam,money_request|prize_job
+1040,en,scam,short_tag,"An SMS claimed I was eligible for an instant loan of Rs.50,000, just need to verify with my Aadhaar OTP, the link was example-link.test/loan.",described,scam,likely_fine,likely_scam,likely_scam,otp_request|link
+1029,en,legit,short_tag,Reminder: Mobile recharge of ₹299 for your number 98765 43210 expires today. Recharge now to avoid interruption.,message,legit,likely_fine,not_sure,not_sure,money_request|urgency
+1284,hinglish,legit,short_tag,"Office se email aaya, weekend off ka notice, koi extra kaam nahi, bas inform.",described,legit,likely_fine,likely_fine,likely_fine,
+1255,hinglish,legit,short_tag,Your Amazon gift card Rs. 500 code: ABCD-EFGH-IJKL. Use before 31-Dec.,message,scam,likely_fine,not_sure,likely_scam,urgency|prize_job
+1127,tanglish,scam,short_tag,Work from home opportunity: Earn Rs.20k per day. Send your bank details to 9876543210 to start.,message,scam,not_sure,not_sure,likely_scam,prize_job
+1131,tanglish,scam,short_tag,Scan this QR to get Rs.500 cashback. Link: https://example-link.test/qr,message,scam,not_sure,not_sure,likely_scam,link
+1205,hi,scam,short_tag,"एक फ़ोन पर बताया गया कि मेरे यूपीआई में 2 लाख रुपये फ्रीज हैं, उन्हें अनलॉक करने के लिए 5k ट्रांसफर करो, फिर कहा QR को स्कैन करो।",described,scam,likely_fine,likely_scam,likely_scam,money_request|link|urgency
+1189,hi,legit,short_tag,"राहुल: कल पार्टी में आना है ना? एंट्री फ्री है, बस अपना मोबाइल ले आओ।",message,legit,likely_fine,likely_fine,likely_fine,
+1231,hinglish,scam,short_tag,"Congratulations! Aap jeete 1 lakh rupees. Claim karne ke liye 5,000 Rs bank transfer karein.",message,scam,likely_fine,not_sure,likely_scam,money_request|prize_job
+1182,hi,legit,short_tag,"SBI डेबिट: आपके खाते 9876543210 से ₹2,500.00 की खरीदारी हुई। यदि यह आपके द्वारा नहीं किया गया है, तुरंत ग्राहक सेवा पर संपर्क करें।",message,legit,not_sure,not_sure,not_sure,urgency
+1201,hi,scam,short_tag,"एक दोस्त ने कहा कि उसके कस्टम्स में मेरे नाम का पैकेज फ्रीज हो गया है, रिलेवांस के लिए 3000 रुपये चाहिए, उसने example-link.test भेजा।",described,scam,likely_fine,likely_scam,likely_scam,money_request|link|urgency
+1110,ta,legit,short_tag,"என் மின்சார பில் நாளை முடிவதற்கு முன் செலுத்த சொல்லிய SMS வந்தது, அதிக கட்டணம் இல்லை.",described,legit,likely_fine,likely_fine,likely_fine,
+1150,tanglish,legit,short_tag,Your Airtel postpaid bill OTP is 839201. Use to confirm payment. Do not share.,message,scam,likely_fine,likely_scam,likely_scam,otp_request|secrecy
+1169,tanglish,legit,short_tag,"My order #AB1234 delivery update: package tomorrow morning, tracking link example-link.test.",described,legit,likely_fine,not_sure,not_sure,link
+1243,hinglish,legit,short_tag,Your order #A123 from FlipKart is out for delivery. Track at example-link.test/track.,message,legit,likely_fine,not_sure,not_sure,link
+1144,tanglish,legit,short_tag,St. Mary's School: Parent-teacher meeting on 15-Nov-2026 at 5 PM in Auditorium. Attendance mandatory.,message,legit,likely_fine,likely_fine,likely_fine,
+1064,ta,scam,short_tag,அனுப்புநர்: உங்கள் OTP 123456. தயவுசெய்து இதை உறுதிப்படுத்துங்கள்: example-link.test/otp,message,scam,likely_fine,not_sure,likely_scam,link
+1036,en,scam,short_tag,"I saw an ad for a part‑time data entry job, they asked me to download a remote access app and give them my laptop password, promising Rs.15,000 per month.",described,scam,likely_scam,likely_scam,likely_scam,remote_access_app|install_app
+1248,hinglish,legit,short_tag,ABC School: Parent-Teacher meeting on 15-Nov at 5pm. Attendance mandatory.,message,legit,likely_fine,likely_fine,likely_fine,
+1037,en,scam,short_tag,"A courier guy called saying customs seized my parcel and I need to clear duty of Rs.3,000, they asked me to transfer money to a bank account they gave, but the tracking ID was bogus.",described,scam,not_sure,likely_scam,likely_scam,money_request|urgency|authority_claim
+1244,hinglish,legit,short_tag,"Electricity bill of Rs. 1,200 due on 10-Nov. Pay via app. No penalty if paid on time.",message,legit,likely_fine,likely_fine,likely_fine,
+1165,tanglish,scam,short_tag,"Received an email from ""support@banksecure.com"" saying my account login was attempted, attached a PDF to verify, but the PDF was malware.",described,scam,likely_fine,likely_fine,not_sure,authority_claim
+1269,hinglish,scam,short_tag,"Mere SIM ko block karne ki warning aayi, ""Agar 500 rupees nahi bheje, SIM permanently block ho jayega"" – maine ignore kar diya.",described,scam,not_sure,not_sure,likely_scam,money_request|urgency
+1128,tanglish,scam,short_tag,Install TeamViewer (https://example-link.test/tv) and give us your ID to fix your phone issue.,message,scam,likely_scam,likely_scam,likely_scam,remote_access_app|install_app|link
+1168,tanglish,legit,short_tag,"Bank-oda credit notification: 1,200 rupees credit aayiduchu, maybe refund.",described,legit,likely_fine,likely_fine,likely_fine,
+1179,tanglish,legit,short_tag,"Police helpline message: Safety tip, keep your wallet safe, no action needed.",described,legit,likely_fine,likely_fine,likely_fine,authority_claim
+1183,hi,legit,short_tag,"ICICI Credit: आपके खाते में ₹5,000.00 की जमा राशि आई है। धन्यवाद।",message,legit,likely_fine,likely_fine,likely_fine,authority_claim
+1146,tanglish,legit,short_tag,Income Tax Dept. Notice: Your PAN details updated. No action needed. For info: http://example-link.test/info,message,unsure,not_sure,likely_scam,likely_scam,link|kyc_update|authority_claim
+1055,en,legit,short_tag,"School notice: Parent‑teacher meeting on 25th Sep at 5 pm in the auditorium, please attend.",described,legit,likely_fine,likely_fine,likely_fine,
+1276,hinglish,legit,short_tag,"Maine apne dost Rahul ko call kiya, usne bola ki paisa bhej do, maine pucha kitna, abhi pending hai.",described,unsure,likely_fine,not_sure,not_sure,money_request
+1247,hinglish,legit,short_tag,"Hey, kal movie night? I'll bring popcorn. Also, can you send me the Uber code?",message,unsure,likely_fine,likely_scam,likely_scam,otp_request
+1103,ta,scam,short_tag,"Crypto trading குழுவில் சேர்ந்து நாளைக்கு 10% லாபம், முதலில் 2,000 ரூபாய் முதலீடு செய்ய வேண்டும், எண் 9090909090.",described,scam,likely_fine,not_sure,likely_scam,money_request|urgency
+1081,ta,legit,short_tag,டாக்டர் ரவி (மருத்துவமனை) உடன் 13-11-2026 10:00 AM நேரத்தில் ஆன்லைன் ஆலோசனை.,message,legit,likely_fine,likely_fine,likely_fine,
+1009,en,scam,short_tag,"Your parcel from Dubai is held at customs. Release it by paying Rs. 3,500 via UPI to 9876543210.",message,scam,likely_fine,likely_scam,likely_scam,money_request|urgency
+1224,hi,legit,short_tag,"पुलिस स्टेशन से लोकल सुरक्षा चेतावनी आई, आज शाम 6 बजे तक बाहर न निकलें, कोई जुर्माना नहीं।",described,legit,likely_fine,not_sure,not_sure,urgency|authority_claim
+1015,en,scam,short_tag,"Hey, it's your bank. We noticed unusual login. If this was you, ignore this message. If not, call us at 1800-123-456.",message,legit,likely_fine,likely_fine,likely_fine,authority_claim
+1084,ta,legit,short_tag,செல்லப்பிராணி பள்ளி: 15-11-2026 அன்று PTA கூட்டம் 04:00 PM இல் நடைபெறும்.,message,legit,likely_fine,likely_fine,likely_fine,
+1176,tanglish,legit,short_tag,"Bank message: Please visit XYZ branch for KYC verification, bring ID proof.",described,legit,not_sure,not_sure,not_sure,kyc_update
+1057,en,legit,short_tag,"Bank message: State Bank asks me to visit the nearest branch tomorrow for KYC document verification, bring ID.",described,legit,not_sure,not_sure,not_sure,kyc_update|authority_claim
+1260,hinglish,scam,short_tag,"Electricity department ka number aaya, bola ki mere connection ko cut kar denge agar 5000 rupees aaj hi pay na kiya.",described,scam,likely_fine,likely_scam,likely_scam,money_request|urgency|authority_claim
+1177,tanglish,legit,short_tag,"Government notice: New census survey, no payment required, just fill online.",described,legit,likely_fine,likely_fine,likely_fine,authority_claim
+1164,tanglish,scam,short_tag,"Got a text: ""Your SIM is blocked due to suspicious activity, click https://example-link.test/unblock to reactivate"". I ignored it.",described,scam,not_sure,not_sure,likely_scam,link|urgency
+1070,ta,scam,short_tag,"அண்ணா, என் மனைவி மருத்துவமனையில் உள்ளது. உடனே 50,000 ரூபாய் உதவி செய்யவும். என் எண் 9990001112.",message,scam,not_sure,not_sure,likely_scam,money_request|urgency
+1251,hinglish,legit,short_tag,Income Tax Dept: Your PAN details need verification. Visit example-link.test/pan to update. No payment required.,message,scam,likely_fine,likely_scam,likely_scam,link|kyc_update|authority_claim
+1119,ta,legit,short_tag,"போலீஸ் நிலையம் இருந்து என் முகவரியில் புதிய தெரு விளக்கு நிறுவப்படுவதாக SMS வந்தது, எந்த நடவடிக்கையும் இல்லை.",described,legit,likely_fine,likely_fine,likely_fine,authority_claim
+1212,hi,legit,short_tag,"अभी मेरे खाते से 500 रुपये का डेबिट हुआ, मोबाइल पर नोटिफ़िकेशन आया।",described,legit,not_sure,not_sure,not_sure,
+1063,ta,scam,short_tag,CBI அதிகாரி: உங்கள் பெயரில் மோசடி வழக்கு உள்ளது. இன்று 5 மணி வரை போலீசார் உங்கள் வீட்டுக்கு வருவார்கள். உடனே 1122334455க்கு பணம் செலுத்தவும்.,message,scam,not_sure,likely_scam,likely_scam,arrest_threat|money_request|urgency|authority_claim
+1245,hinglish,legit,short_tag,Dr. Sharma at City Hospital confirms your appointment on 12-Nov 3pm. Reply YES to confirm.,message,legit,likely_fine,likely_fine,likely_fine,
+1137,tanglish,legit,short_tag,"Your ICICI debit of Rs. 2,500 at Metro Mall on 04-11-2026 is successful.",message,legit,likely_fine,likely_fine,likely_fine,
+1044,en,scam,short_tag,"I got a call from someone saying they're from the Income Tax department, they wanted to verify my PAN and asked for my OTP, they sounded very official.",described,scam,likely_fine,likely_scam,likely_scam,otp_request|kyc_update|authority_claim
+1214,hi,legit,short_tag,"ऑर्डर आईडी 98765 का पैकेज कल दोपहर 2 बजे डिलीवर होगा, ट्रैकिंग लिंक example-link.test।",described,legit,likely_fine,not_sure,not_sure,link
+1156,tanglish,scam,short_tag,"Got a message: ""Congrats! You won Rs.1 lakh in Lucky Draw, pay Rs.2k processing fee to claim, reply YES"". I was like, okay, but it's a scam.",described,scam,not_sure,not_sure,likely_scam,money_request|prize_job
+1019,en,legit,short_tag,"Reminder: Electricity bill of ₹1,200 due on 12-Oct-2026. Please pay before due date to avoid late fee.",message,legit,likely_fine,not_sure,not_sure,money_request|urgency
+1166,tanglish,legit,short_tag,"Hey, naanga bank-oda OTP 123456 vandhuchu, 'Do not share this OTP with anyone' nu message.",described,legit,likely_fine,not_sure,not_sure,secrecy|authority_claim
+1261,hinglish,scam,short_tag,"Maine lottery win ka SMS dekha, bolte the ""Congrats! Claim your prize of 1 lakh, link: example-link.test"" – maine click kiya aur details maange.",described,scam,not_sure,not_sure,likely_scam,link|prize_job
+1180,tanglish,legit,short_tag,"Sneha sent me a reminder: you owe me 1,500 for the concert tickets, pay when you can.",described,legit,likely_fine,not_sure,not_sure,money_request
+1069,ta,scam,short_tag,கஸ்டம்ஸ்: உங்கள் பாக்கெட் தடைசெய்யப்பட்டுள்ளது. சுங்க கட்டணம் 1500 ரூபாய் செலுத்தி விடுவிக்கவும்: 7776665555,message,scam,likely_fine,likely_scam,likely_scam,money_request|urgency|authority_claim
+1172,tanglish,legit,short_tag,"Appa said, 'Next week we need 5k for groceries, I'll transfer later.'",described,legit,likely_fine,not_sure,not_sure,money_request
+1054,en,legit,short_tag,"Friend Rohan texted: 'Hey, can you lend me Rs.500 for the cab? I'll pay you back tomorrow.'",described,legit,likely_fine,not_sure,not_sure,money_request
+1091,ta,scam,short_tag,"நான் என் PAN‑ஐ அப்டேட் செய்ய வேண்டும்னு ஒரு எண் (9876543210) அழைத்தார், link example-link.test சொல்லி என் விவரங்களை பூர்த்தி செய்ய சொன்னார்.",described,scam,likely_fine,likely_scam,likely_scam,link|kyc_update|unknown_sender
+1095,ta,scam,short_tag,"மின் கழிவாளர் அழைத்து, 24 மணிநேரத்துக்குள் பணம் செலுத்தவில்லை என்றால் மின்சாரம் துண்டிக்கப்படும் என்று சொன்னார்.",described,scam,not_sure,not_sure,likely_scam,money_request|urgency
+1042,en,scam,short_tag,"My phone suddenly showed ""SIM blocked"" and a number called saying it's a telecom fraud alert, they asked me to share my new SIM details to unblock it.",described,scam,likely_fine,not_sure,likely_scam,urgency
+1094,ta,scam,short_tag,"UPI‑க்கு OTP கேட்டார், ‘நீங்க அதை கொடுக்கலையா?’ என்று சொல்லி, பணம் அனுப்ப சொன்னார்.",described,scam,likely_fine,likely_scam,likely_scam,otp_request|money_request
+1163,tanglish,scam,short_tag,"A group on Telegram called ""Smart Traders"" promised 30% returns, asked to send Rs.5k to join, they said it's a limited slot.",described,scam,not_sure,likely_scam,likely_scam,money_request|urgency|prize_job
+1117,ta,legit,short_tag,"நகராட்சியிலிருந்து குடியிருப்பு பதிவு புதுப்பிப்பு அறிவிப்பு வந்தது, ஆவணங்கள் கொண்டு வர வேண்டும், பணம் வேண்டாம்.",described,legit,likely_fine,likely_fine,likely_fine,authority_claim
+1280,hinglish,legit,short_tag,"Priya ne call ki, bas hi bola, baad mein coffee plan discuss kiya.",described,legit,likely_fine,likely_fine,likely_fine,
+1254,hinglish,legit,short_tag,Paytm: Rs. 350 pending for your last recharge. Pay now at example-link.test/pay.,message,scam,likely_fine,likely_scam,likely_scam,money_request|link|urgency
+1026,en,legit,short_tag,Call from Mom (saved contact) at 9:15 PM: She said she'll be home by 11.,message,legit,likely_fine,likely_fine,likely_fine,
+1060,en,legit,short_tag,Police department sent a SMS: 'Your lost pet report has been logged. Officer Rao will contact you if found.',described,legit,likely_fine,likely_fine,likely_fine,authority_claim
+1219,hi,legit,short_tag,"स्कूल ने बताया कि अगले हफ्ते वार्षिक परीक्षा 20 तारीख से शुरू होगी, नोटिस पढ़ ली।",described,legit,likely_fine,likely_fine,likely_fine,
+1239,hinglish,scam,short_tag,Aapka SIM block ho raha hai. Reactivate karne ke liye 9999 code reply karein.,message,scam,likely_fine,likely_scam,likely_scam,otp_request|urgency
+1075,ta,scam,short_tag,"வணக்கம், உங்கள் வங்கி கணக்கு விவரங்களை புதுப்பிக்க வேண்டுமா? இதை கிளிக் செய்யவும்: example-link.test/update",message,scam,likely_fine,not_sure,likely_scam,link
+1198,hi,scam,short_tag,"कॉल में बताया गया कि सीबीआई ने मेरे नाम पर धोखाधड़ी केस खोल दिया है, उन्होंने कहा तुरंत 5000 रुपये ट्रांसफर करो वॉलेट में, नहीं तो जेल भेजेंगे।",described,scam,likely_scam,likely_scam,likely_scam,arrest_threat|safe_account_transfer|money_request|urgency|authority_claim
+1059,en,legit,short_tag,"Got a call from my sister, Priya, just checking in, she said 'Happy birthday!' and hung up.",described,legit,likely_fine,likely_fine,likely_fine,
+1170,tanglish,legit,short_tag,"Electricity bill reminder: due 15th, amount 1,800, no threats, just reminder.",described,legit,likely_fine,likely_fine,likely_fine,
+1246,hinglish,legit,short_tag,"Bhai, kal ke dinner ka bill Rs. 1,800 hai, main aaj transfer kar dunga. Thanks!",message,legit,likely_fine,likely_fine,likely_fine,
+1018,en,legit,short_tag,Your order #A12345 from FlipKart is out for delivery. Track here: https://example-link.test/track/A12345,message,legit,not_sure,not_sure,not_sure,link
+1181,hi,legit,short_tag,HDFC Bank: आपका OTP 123456 है। किसी को भी यह OTP न दें। अधिक जानकारी के लिये example-link.test देखें।,message,scam,likely_fine,likely_scam,likely_scam,link|secrecy|authority_claim
+1050,en,legit,short_tag,"Bill reminder from Mumbai Water: your water bill of Rs.1,200 is due on 12th Oct, please pay online.",described,legit,likely_fine,not_sure,not_sure,money_request
+1148,tanglish,legit,short_tag,Police station: Your complaint #45678 is registered. Officer will contact you within 48 hrs. No fees.,message,legit,likely_fine,likely_fine,likely_fine,authority_claim
+1093,ta,scam,short_tag,"CBI அதிகாரி எனக்கு அழைத்து, என் லாப்‌டாப்‑இல் ஒரு வைரஸ் இருப்பதாகக் கூறி, டிஜிட்டல் கைது செய்யப்படும் என்று மிரட்டினார்.",described,scam,likely_scam,likely_scam,likely_scam,arrest_threat|urgency|authority_claim
+1221,hi,legit,short_tag,"हिंदुस्तान बैंक ने कहा कि KYC अपडेट करने के लिए शाखा में आना पड़ेगा, मेरा फॉर्म तैयार है।",described,legit,not_sure,not_sure,not_sure,kyc_update
+1227,hinglish,scam,short_tag,"Namaste, main HDFC bank ka representative hoon. Apka account suspicious hai, turant 4-digit PIN 1234 share karein.",message,scam,likely_scam,likely_scam,likely_scam,otp_request|urgency|authority_claim
+1159,tanglish,scam,short_tag,"I got a courier notification that customs held my parcel, need to clear Rs.3k duty now, they gave a payment link https://example-link.test/customs.",described,scam,not_sure,likely_scam,likely_scam,money_request|link|urgency|authority_claim
+1161,tanglish,scam,short_tag,"A QR code on a flyer claimed a UPI refund for a recent purchase, I scanned and it asked to collect Rs.500, but it just transferred money to their account.",described,scam,likely_fine,not_sure,likely_scam,money_request|link
+1213,hi,legit,short_tag,"आज सुबह मेरे क्रेडिट कार्ड पर 1500 रुपये का क्रेडिट दिखा, बिल पे किया था।",described,legit,likely_fine,likely_fine,likely_fine,
+1076,ta,legit,short_tag,உங்கள் HDFC வங்கி OTP 123456. எவருக்கும் இதை பகிர வேண்டாம்.,message,scam,likely_fine,not_sure,likely_scam,secrecy|authority_claim
+1142,tanglish,legit,short_tag,"Hey amma, naan 5k cash kitta kudukka mudiyuma? Intha weekend thirumbi sollu.",message,unsure,likely_fine,not_sure,not_sure,money_request
+1021,en,legit,short_tag,"Hey Raj, can you send me ₹3,000 for the cab tomorrow? My Paytm ID is raj123.",message,scam,likely_fine,not_sure,likely_scam,money_request
+1097,ta,scam,short_tag,"online data entry வேலை, 2 லட்சம் சம்பளம், முன்னோடி கட்டணமாக 5,000 ரூபாய் அனுப்ப சொன்னார்கள், எண் 9988776655.",described,scam,likely_fine,not_sure,likely_scam,money_request
+1237,hinglish,scam,short_tag,"Instant loan mil raha hai 50,000 tak, bas 1% processing fee. Apply now: http://example-link.test/loan",message,scam,not_sure,not_sure,likely_scam,link|urgency
+1032,en,scam,short_tag,"Yesterday a caller claimed to be from ""State Bank"" and said there was a suspicious transaction, they asked me to verify my account by giving my debit card PIN, I hung up after realising it's a scam.",described,scam,likely_fine,likely_scam,likely_scam,otp_request|authority_claim
+1138,tanglish,legit,short_tag,"Rs. 1,200 credited to your SBI account from Paytm. Ref: TXN12345.",message,legit,likely_fine,likely_fine,likely_fine,
+1118,ta,legit,short_tag,"சந்தோஷ் என்னை அழைத்து, வார இறுதியில் சினிமா போகலாமா என்று சொன்னார்.",described,legit,likely_fine,likely_fine,likely_fine,
+1187,hi,legit,short_tag,वॉटर सप्लाई: आपका जल निरीक्षण 20 नवम्बर को दोपहर 2 बजे निर्धारित है।,message,legit,likely_fine,likely_fine,likely_fine,
+1012,en,scam,short_tag,Get instant loan up to Rs. 1 lakh. No docs required. Download app now: https://example-link.test/loan,message,scam,not_sure,likely_scam,likely_scam,install_app|link|urgency
+1207,hi,scam,short_tag,"एक टेलीग्राम चैनल पर बताया गया कि एक लॉटरी जीत ली है, 2 लाख रुपये मिलेंगे, पहले 1k फीस भेजो, लिंक example-link.test था।",described,scam,not_sure,likely_scam,likely_scam,money_request|link|urgency|prize_job
+1068,ta,scam,short_tag,"நீங்கள் ஒரு புதிய மென்பொருளை நிறுவ வேண்டும். கீழே உள்ள கோப்பை பதிவிறக்கி, எங்கள் ஆதரவு எண்ணுக்கு 12345 அழைக்கவும்: http://example-link.test/remote",message,scam,not_sure,not_sure,likely_scam,install_app|link
+1155,tanglish,scam,short_tag,"A call from 90011 22334 said my electricity will be cut tomorrow if I pay the pending bill now, they gave a link https://example-link.test/pay to avoid the cut.",described,scam,not_sure,likely_scam,likely_scam,money_request|link|urgency
+1089,ta,legit,short_tag,உங்கள் பாதுகாப்பு தகவல்: உள்ளூர் காவல்துறை 10-11-2026 அன்று உங்கள் பகுதியில் பாதுகாப்பு பயிற்சி நடக்கும்.,message,legit,likely_fine,likely_fine,likely_fine,
+1262,hinglish,scam,short_tag,"Ek group ne DM kiya, ""Part-time data entry ka kaam hai, 2k daily, link pe register karo"" – maine form bhar diya.",described,scam,likely_fine,not_sure,likely_scam,link|prize_job
+1092,ta,scam,short_tag,"என் HDFC கணக்கு பற்றி பேசும் என்று ஒரு தெரியாத நம்பர் (9123456789) அழைத்து, OTP கேட்டார், நான் கொடுக்கலாமா எனக் கலக்கினேன்.",described,scam,not_sure,likely_scam,likely_scam,otp_request|unknown_sender
+1025,en,legit,short_tag,Police: Your vehicle registration renewal reminder. No payment needed now; visit RTO before 30-Oct-2026.,message,legit,likely_fine,likely_fine,likely_fine,authority_claim
+1098,ta,scam,short_tag,"ஒரு நண்பர் போல பேசும் நபர் TeamViewer டவுன்லோட் செய்து, என் கணினி அணுக சொல்லி, பணம் வேண்டுமா என்று கேட்டார்.",described,scam,likely_scam,likely_scam,likely_scam,remote_access_app|money_request|install_app
+1024,en,legit,short_tag,Government of India: New PAN card application process updated. Details at https://example-link.test/pan,message,unsure,not_sure,likely_scam,likely_scam,link|kyc_update|authority_claim
+1279,hinglish,legit,short_tag,"Govt se notice aaya, Aadhar update reminder, koi payment nahi, bas documents upload karne ko bola.",described,legit,not_sure,not_sure,not_sure,kyc_update
+1173,tanglish,legit,short_tag,"Raju called, said he will send me 2k for the movie tickets.",described,legit,likely_fine,likely_fine,likely_fine,
+1111,ta,legit,short_tag,என் மருத்துவர் டாக்டர் ரமேஷ் அடுத்த வாரம் செவ்வாய் மாலை 3 மணிக்கு சந்திப்பை உறுதி செய்தார்.,described,legit,likely_fine,likely_fine,likely_fine,
+1080,ta,legit,short_tag,"மின்சாரம் பில்: உங்கள் அடுத்த கட்டணம் ₹1,200 12-11-2026 க்கு முன் செலுத்தவும். எதுவும் தடை இல்லை.",message,legit,likely_fine,likely_fine,likely_fine,
+1265,hinglish,scam,short_tag,"Maa ne WhatsApp pe emergency message bheja, ""Bhai, hospital bill aa gaya, 15k turant bhej"" – lagta tha hack ho gaya.",described,unsure,not_sure,not_sure,not_sure,money_request|urgency
+1175,tanglish,legit,short_tag,"Office notice: New holiday policy, check intranet at example-link.test.",described,legit,likely_fine,not_sure,not_sure,link
+1277,hinglish,legit,short_tag,"School notice: parent-teacher meeting 20Oct ko shaam ko, link: example-link.test/meeting.",described,legit,likely_fine,not_sure,not_sure,link
+1082,ta,legit,short_tag,"அம்மா, இன்று இரவு 5 மணிக்கு வீட்டில் சந்திப்போம், என் பைசா 2,000 ரூபாய் கொடுக்கிறேன்.",message,legit,not_sure,not_sure,not_sure,
+1004,en,scam,short_tag,We need your OTP to complete the refund. Reply with the 6-digit code you received.,message,scam,likely_fine,likely_scam,likely_scam,otp_request
+1143,tanglish,legit,short_tag,"Raju, inge coffee kooda kudukalam? 2k pay panni kudukka.",message,legit,likely_fine,likely_fine,likely_fine,
+1230,hinglish,scam,short_tag,Aapke area ki electricity cut ho jayegi agar due bill pay nahi kiya to. Payment link: http://example-link.test/electricity,message,scam,not_sure,likely_scam,likely_scam,money_request|link|urgency
+1113,ta,legit,short_tag,"அண்ணா, இன்று நான் 3000 ரூபாய் கடனாக எடுத்தேன், அடுத்த மாதம் திருப்பித் தருவேன்.",described,legit,likely_fine,likely_fine,likely_fine,
+1215,hi,legit,short_tag,"बिजली बिल की रिमाइंडर आई है, इस महीने 1200 रुपये देना है, कोई दंड नहीं कहा गया।",described,legit,likely_fine,likely_fine,likely_fine,
+1102,ta,scam,short_tag,"Instant loan app-ல் 1 லட்சம் கடன், 5 நிமிடங்களில் அனுமதி, ஆனால் 2,500 ரூபாய் செயல்முறை கட்டணம் வேண்டும், link example-link.test.",described,scam,likely_fine,likely_scam,likely_scam,money_request|link|urgency
+1014,en,scam,short_tag,Your SIM is blocked due to suspicious activity. Reactivate now at https://example-link.test/sim or lose service.,message,scam,not_sure,not_sure,likely_scam,link|urgency
+1259,hinglish,scam,short_tag,"Mere phone pe ek message aaya, ""Apna OTP share karo, warna aapka account block ho jayega"" – maine socha yeh phishing tha.",described,scam,likely_scam,likely_scam,likely_scam,otp_request|urgency
+1120,ta,legit,short_tag,"நீர் விநியோக நிறுவனத்திலிருந்து நீர் பில் 1500 ரூபாய் உள்ளதென்று நினைவூட்டல் வந்தது, ஆன்லைனில் செலுத்தலாம்.",described,legit,likely_fine,not_sure,not_sure,money_request
+1112,ta,legit,short_tag,விளக்கு பழுது பார்க்கப் போகும் சேவை தொழில்நுட்ப நிபுணர் இன்று மாலை 4 மணிக்கு வருவார் என்று அழைப்பு வந்தது.,described,legit,likely_fine,likely_fine,likely_fine,
+1048,en,legit,short_tag,"Received a credit notification: Rs.5,000 credited to my Axis Savings account from a refund, link example-link.test.",described,unsure,likely_fine,not_sure,not_sure,link
+1016,en,legit,short_tag,Your OTP for transaction at HDFC Bank is 483920. Do not share this OTP with anyone.,message,legit,likely_fine,likely_fine,likely_fine,
+1017,en,legit,short_tag,"₹2,500 debited from your Axis Bank account ending 1234 on 05-Oct-2026. If not you, call 1800-xxxx.",message,scam,likely_fine,likely_fine,not_sure,
+1217,hi,legit,short_tag,"प्लंबर भाई ने कहा कल शाम 5 बजे पानी की लीकेज ठीक करेगा, मेरे नंबर पर कॉन्फ़र्मेशन आया।",described,legit,likely_fine,likely_fine,likely_fine,
+1045,en,scam,short_tag,"A text claimed I had a pending fine for traffic violation and to avoid legal trouble I should pay via UPI to 9876543210, the link was example-link.test/fine.",described,scam,not_sure,not_sure,likely_scam,money_request|link
+1053,en,legit,short_tag,"Mummy called and said she'll send me Rs.3,000 for the school fees, she'll transfer today.",described,legit,not_sure,not_sure,not_sure,
+1072,ta,scam,short_tag,"உடனடி கடன்: 1 நாளில் 20,000 ரூபாய் பெறுங்கள். இப்போது விண்ணப்பிக்க: example-link.test/loan",message,scam,likely_fine,not_sure,likely_scam,link|urgency
+1115,ta,legit,short_tag,"அடுத்த வாரம் நிறுவனத்தின் பொது கூட்டம் வெள்ளிக்கிழமை 10 மணிக்கு நடைபெறும், லிங்க்: https://example-link.test",described,legit,not_sure,not_sure,not_sure,link
+1126,tanglish,scam,short_tag,"Congratulations! You won Rs.1,00,000 in Lucky Draw. Pay Rs.2000 processing fee at https://example-link.test/claim.",message,scam,likely_scam,likely_scam,likely_scam,money_request|link|prize_job
+1141,tanglish,legit,short_tag,Dr. Sharma's clinic appointment on 12-Nov-2026 at 3:30 PM confirmed. Please arrive 10 mins early.,message,legit,likely_fine,likely_fine,likely_fine,
+1013,en,scam,short_tag,"Join our Gold Bullion group. Daily returns 2%. Deposit Rs. 10,000 to 9876543210 to start earning.",message,scam,not_sure,not_sure,likely_scam,money_request|prize_job
+1058,en,legit,short_tag,"Government notice: Your PAN details need updating, visit the portal at example-link.test, no fee involved.",described,unsure,likely_fine,likely_scam,likely_scam,link|kyc_update|authority_claim

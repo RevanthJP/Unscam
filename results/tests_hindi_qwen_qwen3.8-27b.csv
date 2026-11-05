@@ -1,0 +1,14 @@
+id,language,label,kind,plain_model,rules_only,checklist_rules,final,llm_features
+201,hi,scam,digital_arrest,scam,likely_scam,likely_scam,likely_scam,arrest_threat|urgency|secrecy|authority_claim
+202,hi,scam,otp_call,scam,likely_scam,likely_scam,likely_scam,otp_request|urgency
+203,hi,scam,kyc_link,scam,likely_scam,likely_scam,likely_scam,link|urgency|kyc_update
+204,hi,scam,electricity,scam,likely_fine,likely_fine,likely_scam,urgency
+205,hinglish,scam,lottery,scam,not_sure,not_sure,likely_scam,money_request|prize_job
+206,hinglish,scam,remote_app,scam,likely_scam,likely_scam,likely_scam,remote_access_app|install_app
+207,hinglish,scam,job,scam,not_sure,not_sure,likely_scam,money_request|prize_job
+208,hi,legit,bank_otp,scam,likely_fine,likely_fine,not_sure,
+209,hi,legit,credit_alert,scam,likely_fine,likely_fine,not_sure,
+210,hi,legit,bill_reminder,unsure,likely_fine,likely_fine,likely_fine,
+211,hinglish,legit,family,legit,likely_fine,likely_fine,likely_fine,
+212,hinglish,legit,delivery,legit,likely_fine,likely_fine,likely_fine,
+213,hinglish,legit,family_otp,legit,likely_fine,likely_fine,likely_fine,

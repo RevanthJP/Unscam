@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>document.documentElement.classList.add("js")</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Unscam: check a strange call or message</title>
+<meta name="description" content="Tell us about a strange call or message in your own words and language. Get a clear answer and what to do next.">
+<meta name="theme-color" content="#A9C6FA">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='9' fill='%231F5FCF'/><path d='M16 6l8 3v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V9z' fill='none' stroke='%23FFFFFF' stroke-width='2.4' stroke-linejoin='round'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+Tamil:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css?v=23">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="/" aria-label="Unscam home">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l7.500 2.800v5.700c0 4.700-3.100 8.700-7.500 10.500-4.400-1.800-7.500-5.800-7.500-10.500V5.300z"/><path d="M8.500 12l2.5 2.5 4.500-5"/></svg>
+    Unscam
+  </a>
+  <a class="helpline" href="tel:1930"><span class="dot"></span>Lost money? Call 1930</a>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <h1 id="headline" aria-live="off">Is this safe?</h1>
+    <p class="lede">Got a strange call or message? Just say what happened, in your own language.</p>
+  </div>
+
+  <div class="stage" id="stage">
+    <!-- idle / recording / checking -->
+    <div class="capture" id="capture">
+      <div class="wave" id="wave" aria-hidden="true"></div>
+      <button class="mic" id="micBtn" type="button" aria-label="Start speaking">
+        <span class="ring r1"></span><span class="ring r2"></span><span class="ring r3"></span>
+        <span class="mic-core">
+          <svg class="i-mic" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0013 0M12 18v3"/></svg>
+          <svg class="i-stop" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="2"/></svg>
+          <span class="spinner"></span>
+        </span>
+      </button>
+      <p class="status" id="status" role="status">Tap and start talking</p>
+      <p class="timer" id="timer" hidden>0:00</p>
+
+      <div class="alts" id="alts">
+        <button class="link-btn" type="button" id="typeToggle">Type or paste instead</button>
+        <span class="sep" aria-hidden="true"></span>
+        <label class="link-btn" for="fileInput">Upload a voice note</label>
+        <span class="sep" aria-hidden="true"></span>
+        <button class="link-btn" type="button" id="exToggle" aria-expanded="false" aria-controls="examples">Try an example</button>
+        <input id="fileInput" type="file" accept="audio/*,.ogg,.opus,.m4a" hidden>
+      </div>
+
+      <form class="typed" id="typedForm" hidden>
+        <label for="typed" class="sr">Paste the message, or describe what happened</label>
+        <textarea id="typed" rows="4" maxlength="4000" placeholder="Paste the message, or describe what happened..."></textarea>
+        <button class="primary" type="submit">Check this</button>
+      </form>
+
+      <p class="error" id="error" role="alert" hidden></p>
+    </div>
+
+    <!-- result -->
+    <div class="result" id="result" hidden tabindex="-1">
+      <div class="verdict" id="verdict">
+        <span class="badge" id="badge" aria-hidden="true"><i id="badgeMark"></i></span>
+        <div class="vtext">
+          <h2 id="verdictText"></h2>
+          <div class="meter" id="meter" role="img"><b id="meterLabel"></b></div>
+          <div class="langs" id="langs" role="group" aria-label="Reply language" hidden></div>
+        </div>
+      </div>
+      <figure class="heard" id="heardBox" hidden>
+        <figcaption id="heardLabel"></figcaption>
+        <blockquote id="heard"></blockquote>
+        <button class="link-btn fix" id="fixHeard" type="button"></button>
+      </figure>
+      <div class="detail">
+        <section class="block" id="whyBlock">
+          <h3 id="whyLabel"></h3>
+          <ul class="reasons" id="reasons"></ul>
+        </section>
+        <section class="block">
+          <h3 id="stepsLabel"></h3>
+          <ol class="steps" id="steps"></ol>
+        </section>
+      </div>
+      <div class="actions" id="actions"></div>
+      <p class="degraded" id="degraded" hidden>The AI check was unavailable, so this is based on our phrase lists only. Treat it with extra care.</p>
+      <button class="again" id="again" type="button">Check something else</button>
+    </div>
+  </div>
+
+  <div class="examples" id="examples" hidden>
+    <div class="ex-row">
+      <button type="button" data-ex="मैं CBI अधिकारी बोल रहा हूं। आपके नाम के पार्सल में ड्रग्स मिले हैं। वीडियो कॉल पर बने रहें और किसी को न बताएं।">“CBI” video call</button>
+      <button type="button" data-ex="I got a KYC update message from an unknown number. It looks like it is from my bank.">KYC from unknown number</button>
+      <button type="button" data-ex="आपका OTP 482913 है। इसे किसी के साथ साझा न करें। - SBI">A genuine OTP alert</button>
+    </div>
+  </div>
+</section>
+
+<section class="band how">
+  <h2>Three steps. <span class="nowrap">No sign-up.</span></h2>
+  <ol class="how-grid">
+    <li><svg class="step-art" viewBox="0 0 160 110" aria-hidden="true"><rect x="8" y="10" width="112" height="70" rx="20" fill="#0071E3"/><path d="M36 78l-4 24 26-22z" fill="#0071E3"/><g stroke="#fff" stroke-width="6" stroke-linecap="round"><path d="M38 38v14M52 28v34M66 20v50M80 30v30M94 38v14"/></g><circle cx="138" cy="28" r="13" fill="#FF9B5C"/><circle cx="150" cy="60" r="7" fill="#FF9B5C" opacity=".6"/></svg><b>Say what happened</b><span>Describe the call or message, or paste it. No forms and no special words.</span></li>
+    <li><svg class="step-art" viewBox="0 0 160 110" aria-hidden="true"><rect x="8" y="10" width="104" height="84" rx="14" fill="#2A2A2E"/><rect x="24" y="28" width="72" height="8" rx="4" fill="#A1A1A6"/><rect x="24" y="46" width="44" height="8" rx="4" fill="#FF9B5C"/><rect x="24" y="64" width="62" height="8" rx="4" fill="#A1A1A6"/><circle cx="100" cy="60" r="29" fill="rgba(109,177,255,.2)" stroke="#6DB1FF" stroke-width="7"/><path d="M122 82l26 22" stroke="#6DB1FF" stroke-width="10" stroke-linecap="round"/><path d="M100 46v16" stroke="#FF9B5C" stroke-width="6" stroke-linecap="round"/><circle cx="100" cy="73" r="3.5" fill="#FF9B5C"/></svg><b>We look for warning signs</b><span>AI and known scam patterns check for things like OTP requests, arrest threats and fake KYC.</span></li>
+    <li><svg class="step-art" viewBox="0 0 160 110" aria-hidden="true"><path d="M60 6l40 15v32c0 26-17 42-40 50-23-8-40-24-40-50V21z" fill="#0071E3"/><path d="M42 54l14 14 24-28" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="130" cy="72" r="24" fill="#FF9B5C"/><path d="M120 62c2 11 9 18 20 20l5-6-8-5-3 3c-3-1-6-4-7-7l3-3-5-8z" fill="#0B0B0D"/></svg><b>Get a clear next step</b><span>A straight answer, the reasons, and exactly who to call if something is wrong.</span></li>
+  </ol>
+</section>
+
+<section class="band watch">
+  <div>
+    <h2>What gives a scam away</h2>
+    <p>Scammers use fear and hurry. These are some of the signs we listen for.</p>
+  </div>
+  <ul class="flags">
+    <li><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="5" y="14" width="30" height="20" rx="4"/><path d="M12 14v-4a8 8 0 0 1 16 0v4"/><circle cx="20" cy="24" r="3"/></svg><span>Asking for your OTP or PIN</span></li><li><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="13" cy="20" r="8"/><circle cx="29" cy="20" r="8"/><path d="M21 20h0"/><path d="M6 10l4 4M34 10l-4 4"/></svg><span>“You will be arrested”</span></li><li><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M17 23a7 7 0 0 0 10 0l5-5a7 7 0 0 0-10-10l-2 2"/><path d="M23 17a7 7 0 0 0-10 0l-5 5a7 7 0 0 0 10 10l2-2"/></svg><span>KYC updates by link</span></li><li><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="4" y="7" width="32" height="22" rx="3"/><path d="M14 35h12M20 29v6"/><path d="M14 21l6-7 6 7M20 14v11" /></svg><span>Screen-sharing apps</span></li>
+    <li><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="5" y="12" width="30" height="22" rx="4"/><path d="M5 19h30"/><path d="M12 6l8-4 8 4"/><circle cx="20" cy="27" r="3"/></svg><span>“Move money to a safe account”</span></li><li><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M10 5h6l3 8-4 3a18 18 0 0 0 9 9l3-4 8 3v6a4 4 0 0 1-4 4C19 34 6 21 6 9a4 4 0 0 1 4-4z"/><path d="M27 6a4 4 0 0 1 7 2c0 3-3 3-3 6"/><path d="M31 18h0"/></svg><span>Unknown numbers acting as your bank</span></li><li><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="6" y="16" width="28" height="18" rx="3"/><path d="M4 10h32v6H4zM20 10v24"/><path d="M20 10c-3-7-11-7-11-2 0 2 3 2 11 2zM20 10c3-7 11-7 11-2 0 2-3 2-11 2z"/></svg><span>Fees to claim a prize</span></li><li><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 6l28 28"/><path d="M12 9h18a5 5 0 0 1 5 5v11a5 5 0 0 1-2 4M27 30H16l-8 6v-6a5 5 0 0 1-3-5V14a5 5 0 0 1 1-3"/></svg><span>“Don’t tell anyone”</span></li>
+  </ul>
+</section>
+
+<section class="band fact">
+  <div class="fact-grid">
+    <div class="fact-text">
+      <p class="big" data-count="83668">83,668</p>
+      <p>WhatsApp accounts used for “digital arrest” scams were blocked by the Indian Cyber Crime Coordination Centre, as of a March 2025 government statement.
+      <a href="https://pib.gov.in/PressReleasePage.aspx?PRID=2110809" target="_blank" rel="noopener">Read the release</a></p>
+    </div>
+    <svg class="fact-art" viewBox="0 0 320 220" aria-hidden="true">
+      <rect x="20" y="20" width="170" height="60" rx="20" fill="rgba(255,255,255,.2)"/><rect x="42" y="42" width="100" height="8" rx="4" fill="#fff" opacity=".85"/><rect x="42" y="56" width="66" height="8" rx="4" fill="#fff" opacity=".55"/>
+      <rect x="90" y="92" width="190" height="60" rx="20" fill="rgba(255,255,255,.2)"/><rect x="112" y="114" width="118" height="8" rx="4" fill="#fff" opacity=".85"/><rect x="112" y="128" width="78" height="8" rx="4" fill="#fff" opacity=".55"/>
+      <rect x="20" y="162" width="150" height="50" rx="20" fill="rgba(255,255,255,.2)"/><rect x="42" y="182" width="88" height="8" rx="4" fill="#fff" opacity=".85"/>
+      <circle cx="238" cy="62" r="46" fill="#fff"/><circle cx="238" cy="62" r="29" fill="none" stroke="#A5470A" stroke-width="9"/><path d="M218 42l40 40" stroke="#A5470A" stroke-width="9" stroke-linecap="round"/>
+    </svg>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>This tool can be wrong and does not replace your bank or the police. In India, call 1930 or report at <a href="https://cybercrime.gov.in" target="_blank" rel="noopener">cybercrime.gov.in</a>.</p>
+  <p>What you say or type is sent to Groq for processing and is not stored by this app. Please do not include real OTPs, passwords or card numbers.</p>
+</footer>
+<script src="/static/app.js?v=23"></script>
+</body>
+</html>

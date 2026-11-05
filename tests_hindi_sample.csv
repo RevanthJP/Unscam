@@ -1,0 +1,61 @@
+id,language,label,form,kind,text
+2026,hi,legit,message,short_tag,"डॉ. अनीता सिंह की अपॉइंटमेंट 12‑नवम्बर को सुबह 9:30 बजे, क्लिनिक 3B, हेल्थकेयर हॉस्पिटल। पुष्टि करें।"
+2017,hi,scam,message,short_tag,सुरक्षा कारणों से आपका खाता अस्थायी रूप से बंद किया गया है। पुनः सक्रिय करने के लिए 6666666666 पर कॉल करें।
+2028,hi,legit,message,short_tag,"भाई, कल शाम को 2,000 रुपये ट्रांसफ़र कर दूँगा, फिर हम साथ में फिल्म देखेंगे।"
+2065,hi,legit,described,short_tag,"डॉक्टर साहब ने कल 3 बजे अपॉइंटमेंट सेट किया है, क्लिनिक का पता example-link.test पर है।"
+2052,hi,scam,described,short_tag,"इंस्टेंट लोन ऐप पर एक नोटिफ़िकेशन आया, कहा कि 5 मिनट में 2 लाख रुपये मिलेंगे, पहले 1,000 रुपये सिक्योरिटी के रूप में जमा करो।"
+2061,hi,legit,described,short_tag,"मैंने अभी बैंक से एक OTP अलर्ट मिला, 123456, उन्होंने कहा कि इसे किसी से शेयर न करें।"
+2042,hi,scam,described,short_tag,"आज सुबह बैंक से SMS आया, बताया कि मेरे खाते में अनियमित लेनदेन है, फिर एक नंबर से कॉल आया, बोले मेरे खाते को सुरक्षित रखने के लिए OTP चाहिए, मैं तुरंत नहीं दिया।"
+2046,hi,scam,described,short_tag,"मैंने एक लॉटरी जीतने की सूचना प्राप्त की, कहा गया कि 10,000 रुपये का प्राइज है, पर पहले 2,000 रुपये ट्रांसफर कर दो, नहीं तो प्राइज रद्द।"
+2035,hi,legit,message,short_tag,पुलिस ने आपको आज रात 10 बजे के आसपास के क्षेत्र में कोई शिकायत नहीं की। आपका नंबर सुरक्षित है।
+2002,hi,scam,message,short_tag,"नमस्ते, मैं HDFC बैंक का प्रतिनिधि हूँ। आपका खाता असुरक्षित है, कृपया 9876543210 पर कॉल करके OTP दें।"
+2034,hi,legit,message,short_tag,"आज दोपहर 3 बजे मेरे दोस्त राहुल (9876543210) ने कॉल किया, बस 'क्या कर रहे हो?' पूछने के लिए।"
+2077,hi,legit,described,short_tag,"मेरे भाई ने कहा कि वह अगले हफ्ते पैसे भेजेगा, लेकिन अभी नहीं भेजा।"
+2078,hi,legit,described,short_tag,"ऑफिस से नोटिस मिला, नई पॉलिसी लागू होगी, लेकिन कोई अतिरिक्त खर्च नहीं होगा।"
+2053,hi,scam,described,short_tag,"ट्रेडिंग ग्रुप का व्हाट्सएप लिंक मिला, कहा गया “आज ही ₹10,000 निवेश करो, कल तक 30% रिटर्न मिलेगा”, लिंक example-link.test पर क्लिक करने को कहा।"
+2001,hi,scam,message,short_tag,"प्रिय ग्राहक, आपका KYC अपडेट करने के लिए कृपया इस लिंक पर जाएँ: https://example-link.test/kyc-update और आवश्यक दस्तावेज़ अपलोड करें।"
+2045,hi,scam,described,short_tag,"कल रात बिजली कट जाने की धमकी मिली, कहा गया कि अगर 500 रुपये नहीं भेजोगे तो बिजली विभाग तुरंत कनेक्शन बंद कर देगा।"
+2066,hi,legit,described,short_tag,"मेरे दोस्त ने बताया कि वह आज शाम को 2 बजे पैसे ट्रांसफर करेगा, लेकिन अभी नहीं किया।"
+2079,hi,legit,described,short_tag,"बैंक ने कहा कि KYC के लिए नई फोटो चाहिए, शाखा का पता example-link.test है।"
+2020,hi,scam,message,short_tag,आपको सरकारी योजना के तहत ₹1 लाख की सहायता मिल सकती है। आवेदन के लिए 4433221100 पर कॉल करें।
+2004,hi,scam,message,short_tag,"आपका OTP: 472839, कृपया 10 मिनट में इस कोड को सत्यापित करें।"
+2050,hi,scam,described,short_tag,"भाई, मेरे मोबाइल पर एक नंबर से कॉल आया, कहा कि मेरे रिश्तेदार को अस्पताल में इमरजेंसी है, तुरंत 10,000 रुपये ट्रांसफर कर दो।"
+2030,hi,legit,message,short_tag,विद्यार्थी अभिषेक के लिए 15‑नवम्बर को गणित परीक्षा होगी। कृपया समय पर उपस्थित रहें। - XYZ स्कूल
+2063,hi,legit,described,short_tag,"डिलीवरी अपडेट आया है, मेरे पैकेज का ट्रैकिंग नंबर 987654 है, कल दोपहर तक पहुंच जाएगा। लिंक: example-link.test"
+2056,hi,scam,described,short_tag,"मेरे मोबाइल पर एक मैसेज आया, लिखा था “आपकी बिजली बिल में अनपेक्षित बकाया है, 1,200 रुपये तुरंत जमा करो, नहीं तो कनेक्शन कटेगा”。"
+2021,hi,legit,message,short_tag,आपका OTP है 472839। इसे किसी के साथ साझा न करें। - SBI बैंक
+2067,hi,legit,described,short_tag,"स्कूल से नोटिस आया है, छुट्टी अगले हफ्ते से शुरू, कोई फीस नहीं ली जाएगी।"
+2036,hi,legit,message,short_tag,आपको आज सुबह 8:00 बजे मोबाइल रिचार्ज ₹199 मिला है। आपका बैलेंस अपडेट हो गया है। - PayNow
+2057,hi,scam,described,short_tag,"एक दोस्त ने बताया कि उसे एक नौकरी का ऑफर मिला, लेकिन पहले 5,000 रुपये प्रोसेसिंग फीस देनी है, लिंक example-link.test पर बताया गया।"
+2062,hi,legit,described,short_tag,"आज मेरे क्रेडिट कार्ड पर एक डेबिट अलर्ट आया, 500 रुपये, मेरा नाम राजेश।"
+2043,hi,scam,described,short_tag,"एक अज्ञात नंबर पर से मैसेज आया, लिखा था “CBI ने आपका नाम गिरफ़्तार किया है, तुरंत अपना फ़ोन अनलॉक करो, नहीं तो जेल में डालेंगे”, मैं डर गया था।"
+2003,hi,scam,message,short_tag,आपको डिजिटल गिरफ्तारी के तहत गिरफ्तार किया गया है। तुरंत CBI को 1122334455 पर कॉल करके फॉर्म भरें।
+2076,hi,legit,described,short_tag,"डॉक्टर ने आज सुबह कॉल किया, फॉलो‑अप अपॉइंटमेंट अगले सोमवार को तय किया।"
+2022,hi,legit,message,short_tag,"आपके खाते से ₹5,200.00 डेबिट किया गया है। विवरण: एएमटी वॉटर बिल भुगतान। - HDFC बैंक"
+2049,hi,scam,described,short_tag,"कस्टम्स ने बताया कि मेरा पार्सल रोक दिया गया है, 5,000 रुपये का कस्टम ड्यूटी दे दो, नहीं तो सामान फेंक देंगे, लिंक example-link.test दिया था।"
+2033,hi,legit,message,short_tag,पंचायती राज कार्यालय से सूचना: आपके पते पर नई जल पाइपलाइन योजना शुरू हो रही है। अधिक जानकारी के लिए https://example-link.test/info
+2098,hinglish,scam,message,short_tag,Aapke bank se suspicious transaction detect hua. Verify karne ke liye OTP 654321 reply karein.
+2090,hinglish,scam,message,short_tag,"UPI collect request: 5,000 INR aapko refund milne wala hai. QR scan karo ya link pe click karo: http://example-link.test"
+2086,hinglish,scam,message,short_tag,"Part-time data entry ka kaam mil raha hai, daily 2k earn kar sakte ho. Bas apna bank account aur OTP share karo, kaam start ho jayega."
+2134,hinglish,scam,described,short_tag,"Mere SIM ko block karne ki warning aayi, bola ki fake number se login attempt hua, turant 200 rupaye pay karo, link: example-link.test/simblock."
+2138,hinglish,scam,described,short_tag,"Koi ne WhatsApp pe bola ki unka account hack ho gaya, aapki madad chahiye, 500 rupaye bhej do, fir unka account recover ho jayega."
+2092,hinglish,scam,message,short_tag,"Invest in GoldX group, 10% daily return guarantee. Sirf 5,000 INR se start karo. Link: http://example-link.test"
+2087,hinglish,scam,message,short_tag,"Mujhe remote access app install karne ke liye permission do, main aapka phone fix kar dunga. Link: http://example-link.test"
+2089,hinglish,scam,message,short_tag,"Maa ki tabiyat kharab hai, emergency fund chahiye. Jaldi 30,000 bhej do, paisa turant transfer kar dunga."
+2109,hinglish,legit,message,short_tag,Govt. Notice: Your PAN details need verification. Visit example-link.test/pan-verify and upload documents. No payment required.
+2100,hinglish,scam,message,short_tag,"Courier parcel customs clearance pending hai. 4,000 INR pay karo, warna parcel destroy ho jayega."
+2133,hinglish,scam,described,short_tag,"Maine ek trading group ka invite accept kiya, bola ki 2 din me 10% profit, lekin pehle account verify karna hoga, link: example-link.test/trade."
+2124,hinglish,scam,described,short_tag,"Mere phone pe ek SMS aaya, ""Aapka Aadhaar verification pending hai, link pe click karo: example-link.test/aadhaar"" maine click kiya aur details daal di."
+2096,hinglish,scam,message,short_tag,"Police ne aapke address par illegal activity notice kiya hai. Fine 7,000 INR abhi pay karo, warna arrest ho sakta hai."
+2108,hinglish,legit,message,short_tag,XYZ Bank: Please visit nearest branch with ID proof for KYC update. No fee involved. Branch timings 9 AM-4 PM.
+2110,hinglish,legit,message,short_tag,"Caller ID: Mom (9876543210) - ""Mujhe aaj raat 8 baje call karo, kitchen ka kaam discuss karna hai."""
+2125,hinglish,scam,described,short_tag,"Koi unknown number se bola ki electricity cut ho jayegi agar 500 rupaye turant pay nahi kiye, payment link: example-link.test/paynow."
+2105,hinglish,legit,message,short_tag,Dr. Mehta's clinic confirms appointment on 10-Nov at 3:30 PM. Bring previous reports. Reply YES to confirm.
+2107,hinglish,legit,message,short_tag,"School notice: Annual sports day on 20-Nov, 9 AM. Parents ko request hai ki bachon ko proper uniform pehnaaye."
+2104,hinglish,legit,message,short_tag,"Reminder: Electricity bill #E9876 due 12-Nov. Amount Rs.1,200. Pay via your app. No late fee if paid on time."
+2103,hinglish,legit,message,short_tag,Your Flipkart order #A12345 is out for delivery. Track at example-link.test/track/A12345.
+2129,hinglish,scam,described,short_tag,"Customs ne phone kiya, bola mera parcel hold hai, customs fee 2000 rupaye de do, link: example-link.test/customs."
+2101,hinglish,legit,message,short_tag,XYZ Bank: Your OTP for transaction is 472839. Do not share with anyone. Valid for 5 mins.
+2132,hinglish,scam,described,short_tag,"Ek app ne mujhe instant loan offer kiya, bas 5 minute me paisa, par pehle 1k processing fee deni hogi, link: example-link.test/loan."
+2140,hinglish,scam,described,short_tag,"Ek fake CBI officer ne phone kiya, bola ki aapka naam fraud case me aaya hai, 15k fine dena padega, varna court aayega."
+2091,hinglish,scam,message,short_tag,"Instant loan app se aapke liye 50,000 INR approve hua hai. KYC ke liye aapka Aadhaar aur OTP chahiye."
