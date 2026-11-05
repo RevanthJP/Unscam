@@ -71,21 +71,48 @@ def _client():
     return Groq(api_key=key, max_retries=int(os.getenv("GROQ_RETRIES", "2")))
 
 
-def transcribe(audio_bytes, filename="clip.wav", language=None):
-    """Speech to text. Returns (text, detected_language)."""
+# Hints in the speaker's own mix of languages. An English-only hint pushes the model to answer in English.
+_SPEECH_HINT = {
+    None: "Aadhaar card, PAN card, KYC update, OTP, UPI, CBI, RBI, TRAI, customs, parcel, digital arrest, "
+          "money laundering, anti-national, bank account, AnyDesk, unknown number.",
+    "ta": "என்னுடைய Aadhaar card, OTP, KYC, bank account பற்றி unknown number-ல இருந்து ஒரு message வந்தது. "
+          "money laundering, anti-national, digital arrest, police, CBI.",
+    "hi": "मेरे Aadhaar card, OTP, KYC, bank account के बारे में unknown number से एक message आया। "
+          "money laundering, anti-national, digital arrest, police, CBI.",
+}
+_LANG_CODE = {"tamil": "ta", "ta": "ta", "hindi": "hi", "hi": "hi"}
+_NATIVE_SCRIPT = {"ta": re.compile(r"[\u0B80-\u0BFF]"), "hi": re.compile(r"[\u0900-\u097F]")}
+
+
+def _speech_call(audio_bytes, filename, language=None):
     kwargs = dict(
         file=(filename, audio_bytes),
         model=STT_MODEL,
         response_format="verbose_json",
         temperature=0.0,
-        prompt=("Aadhaar card, PAN card, KYC update, OTP, UPI, CBI, RBI, TRAI, customs, parcel, digital arrest, "
-                "money laundering, anti-national, bank account, AnyDesk, unknown number."),
+        prompt=_SPEECH_HINT[language],
     )
     if language:
         kwargs["language"] = language
-    resp = _client().audio.transcriptions.create(**kwargs)
+    return _client().audio.transcriptions.create(**kwargs)
+
+
+def transcribe(audio_bytes, filename="clip.wav"):
+    """Speech to text. Returns (text, detected_language)."""
+    resp = _speech_call(audio_bytes, filename)
     text = (resp.text or "").strip()
-    return ("" if _is_silence(resp, text) else text), getattr(resp, "language", None)
+    detected = getattr(resp, "language", None)
+    if _is_silence(resp, text):
+        return "", detected
+    # Detected Tamil or Hindi but written with no Tamil or Hindi at all: the model has
+    # paraphrased into English, which can change the meaning. Listen again in that language.
+    code = _LANG_CODE.get((detected or "").lower())
+    if code and not _NATIVE_SCRIPT[code].search(text):
+        second = _speech_call(audio_bytes, filename, language=code)
+        again = (second.text or "").strip()
+        if again and not _is_silence(second, again):
+            text = again
+    return text, detected
 
 
 # Speech models invent these when given silence or background noise.
