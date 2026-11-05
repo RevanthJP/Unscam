@@ -1,4 +1,5 @@
 """Web server for Unscam: serves the page and the two check endpoints."""
+import re
 import time
 from pathlib import Path
 
@@ -68,8 +69,9 @@ def check_audio(file: UploadFile = File(...)):
     _spend()
     try:
         res = pipeline.analyze_audio(data, filename=Path(file.filename or "clip.webm").name)
-    except Exception:
-        raise HTTPException(502, "We could not process that audio right now. Please try typing it instead.")
+    except Exception as e:
+        print("audio check failed:", type(e).__name__, getattr(e, "status_code", ""), re.sub(r"org_\w+", "org", str(e))[:300], flush=True)
+        raise HTTPException(502, "We could not process that audio right now. Please try typing it instead. [debug: %s %s %s]" % (type(e).__name__, getattr(e, "status_code", ""), re.sub(r"org_\w+|gsk_\w+", "x", str(e))[:160]))
     if not res["transcript"]:
         message = ("Please tell us a little more about what happened."
                    if res.get("reason") == "too_short"
