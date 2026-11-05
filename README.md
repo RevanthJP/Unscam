@@ -2,7 +2,7 @@
 
 A voice-first scam checker for people in India. Say what happened on a strange call or message, in your own language, and get a verdict, the reasons, and what to do next, with no sign-up.
 
-**Live demo:** _link to be added after deployment_
+**Live demo:** https://unscam-theta.vercel.app
 
 ## Why
 
